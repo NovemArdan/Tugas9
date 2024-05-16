@@ -1,17 +1,26 @@
 <?php
 
-require_once 'animal.php';
+require_once 'Frog.php';
+require_once 'Ape.php';
 
-// Membuat instance dari class Animal
+// Instance dari class Animal
 $sheep = new Animal("shaun");
+echo "name : " . $sheep->get_name() . "<br>";
+echo "legs : " . $sheep->get_legs() . "<br>";
+echo "cold blooded : " . $sheep->get_cold_blooded() . "<br>";
 
-// Menampilkan properti
-echo $sheep->name; // "shaun"
-echo $sheep->legs; // 4
-echo $sheep->cold_blooded; // "no"
 
-// Opsional: menggunakan method getter
-echo $sheep->get_name(); // "shaun"
-echo $sheep->get_legs(); // 4
-echo $sheep->get_cold_blooded(); // "no"
+// Instance dari class Ape
+$sungokong = new Ape("kera sakti");
+echo "name : " . $sungokong->get_name() . "<br>";
+echo "legs : " . $sungokong->get_legs() . "<br>";
+echo "cold blooded : " . $sungokong->get_cold_blooded() . "<br>";
+echo "yell : "; $sungokong->yell(). "<br>";
+
+// Instance dari class Frog
+$kodok = new Frog("buduk");
+echo "name : " . $kodok->get_name() . "<br>";
+echo "legs : " . $kodok->get_legs() . "<br>";
+echo "cold blooded : " . $kodok->get_cold_blooded() . "<br>";
+echo "jump : "; $kodok->jump(). "<br>";
 ?>
