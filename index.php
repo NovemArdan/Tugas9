@@ -11,11 +11,11 @@ echo "cold blooded : " . $sheep->get_cold_blooded() . "<br>";
 
 
 // Instance dari class Ape
-$sungokong = new Ape("kera sakti");
-echo "name : " . $sungokong->get_name() . "<br>";
-echo "legs : " . $sungokong->get_legs() . "<br>";
-echo "cold blooded : " . $sungokong->get_cold_blooded() . "<br>";
-echo "yell : "; $sungokong->yell(). "<br>";
+$kera = new Ape("kera sakti");
+echo "name : " . $kera->get_name() . "<br>";
+echo "legs : " . $kera->get_legs() . "<br>";
+echo "cold blooded : " . $kera->get_cold_blooded() . "<br>";
+echo "yell : "; $kera->yell(). "<br>";
 
 // Instance dari class Frog
 $kodok = new Frog("buduk");
